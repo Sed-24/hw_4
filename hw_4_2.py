@@ -1,19 +1,11 @@
 from pathlib import Path
 
-# Перше завдання
-
-path = Path('C:/Users/Public/Pro/GoIt/hw_4/Test')
+path = Path('C:/Users/Public/Pro/GoIt/hw_4/Test/text_cat.txt')
 
 
 def get_cats_info(path):
-    file = ''
-    for i in path.iterdir():
-        if i.suffix in ['.doc', '.docm', '.docx', '.dot', '.rtf', '.txt', '.pdf']:
-            file = i.name
-
     try:
-        with open(file, 'r', encoding='utf-8') as fh:
-
+        with open(path, 'r', encoding='utf-8') as fh:
             cats = []
             while True:
                 line = fh.readline().split(',')
