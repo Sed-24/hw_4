@@ -23,10 +23,10 @@ def directory_and_file(path, indent=0):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 1:
+    if len(sys.argv) != 2:
         print(Fore.RED + "Потрібен шлях.")
         sys.exit(1)
 
-    path = Path('C:/Users/Public/Pro/GoIt/hw_4/Test')
+    path = Path(sys.argv[1])
 
     directory_and_file(path)

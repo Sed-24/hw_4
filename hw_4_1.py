@@ -15,7 +15,7 @@ def total_salary(path):
 
             total = sum(num)
             average = sum(num) // len(num)
-            return f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}"
+            return total, average
 
     except FileNotFoundError:
         return 'File not found'

@@ -15,13 +15,13 @@ def main():
 
         elif "hello" == command:
             print("How can I help you?")
-        elif "add" in command:
+        elif "add" == command:
             print(add_contact(*args))
-        elif "change" in command:
+        elif "change" == command:
             print(change_contact(*args))
-        elif "phone" in command:
+        elif "phone" == command:
             print(show_phone(*args))
-        elif "all" in command:
+        elif "all" == command:
             print(show_all())
         else:
             print("Invalid command.")

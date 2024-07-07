@@ -14,7 +14,7 @@ def get_cats_info(path):
                 cats.append({"id": line[0], "name": line[1], "age": line[2][:-1]})
         return cats
     except FileNotFoundError:
-        'File not found'
+        return 'File not found'
 
 
 print(get_cats_info(path))
